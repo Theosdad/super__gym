@@ -1,0 +1,35 @@
+.site-list {
+    font-family: $roboto;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: right;
+    padding-top: 57px;
+
+    @media(max-width: $tablet-width) {
+        padding-bottom: 50px;
+        padding-top: 0;
+    }
+
+    @media(max-width: $mobile-width) {
+        padding-bottom: 32px;
+        padding-top: 0;
+        min-width: 113px;
+    }
+}
+
+.site-list__link {
+    color: $color-default-white;
+
+    &:focus,
+    &:hover {
+        border-bottom: 1px solid $ghost-white;
+        opacity: 0.7;
+    }
+
+    &:active {
+        opacity: 0.9;
+        color: $black-russian;
+        border-bottom: 1px solid $black-russian;
+    }
+}

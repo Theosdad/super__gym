@@ -13,16 +13,14 @@
 @import "global/fonts";
 @import "global/reboot";
 @import "global/utils";
-@import "global/container";
 
 // Blocks
 // ---------------------------------
-
-@import "blocks/btn";
-@import "blocks/modal";
-@import "blocks/custom-input";
-@import "blocks/custom-toggle";
-@import "blocks/custom-select";
+@import "blocks/header";
+@import "blocks/nav";
+@import "blocks/site-list";
+@import "blocks/hero";
+@import "blocks/video";
 
 // ---------------------------------
 
