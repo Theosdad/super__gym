@@ -1,0 +1,28 @@
+.catalog {
+    width: 100%;
+    background-color: $ghost-white;
+    position: relative;
+}
+
+.catalog__container {
+    max-width: 1366px;
+    margin: 0 auto;
+    padding: 120px 103px;
+
+    h2 {
+        font-family: $alumni;
+        font-weight: 600;
+        font-size: 54px;
+        line-height: 65px;
+        letter-spacing: 0.03em;
+        margin: 0 auto;
+        max-width: 100%;
+        text-align: center;
+    }
+}
+
+.catalog__image {
+    position: absolute;
+    bottom: -17%;
+    right: 0;
+}

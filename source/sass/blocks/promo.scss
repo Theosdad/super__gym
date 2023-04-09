@@ -1,0 +1,106 @@
+.promo {
+    width: 100%
+}
+
+.promo__container {
+    max-width: 1160px;
+    margin: 0 auto;
+    padding-top: 120px;
+    padding-bottom: 110px;
+}
+
+.promo__content {
+    display: flex;
+}
+
+.promo__description {
+    background-color: $torch-red;
+    color: $color-default-white;
+    padding: 87px 78px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 500px;
+
+    h2 {
+        font-family: $alumni;
+        font-weight: 600;
+        font-size: 82px;
+        line-height: 79px;
+        text-align: center;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        margin: 0;
+    }
+
+    p {
+        font-size: 18px;
+        line-height: 27px;
+        margin: 0;
+        grid-column: 1 / -1;
+    }
+}
+
+.promo__announcement {
+    font-family: $roboto;
+    margin: 0;
+    place-self: start end;
+
+    dt {
+        font-size: 18px;
+        line-height: 27px;
+    }
+
+    dd {
+        position: relative;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 60px;
+        margin: 0;
+        display: inline-flex;
+        align-items: center;
+
+        &::before {
+            position: absolute;
+            top: 5px;
+            content: "";
+            width: 100%;
+            height: 1px;
+            background-color: $color-default-white;
+        }
+    }
+
+    small {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 21px;
+        padding-left: 7px;
+    }
+}
+
+.promo__button {
+    grid-column: 1 / -1;
+    text-transform: uppercase;
+    color: $color-default-white;
+    border: 4px solid $color-default-white;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.05em;
+    display: inline-flex;
+    align-self: center;
+    padding: 25px 110px;
+    place-self: end;
+    user-select: none;
+
+    &:focus,
+    &:hover {
+        outline: none;
+        background-color: $color-default-white;
+        color: $torch-red;
+    }
+
+    &:active {
+        background-color: $cobalt;
+        border-color: $cobalt;
+    }
+}
