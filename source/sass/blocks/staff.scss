@@ -1,0 +1,46 @@
+.staff__container {
+    max-width: 1160px;
+    margin: 0 auto;
+}
+
+.staff__list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 3%;
+}
+
+.staff__item {
+    display: grid;
+    max-width: 260px;
+
+    &:hover,
+    &:focus,
+    &:focus-within {
+        .staff__description-wrapper {
+            background-color: rgba($sapphire, 0.89);
+        }
+
+        .staff__description {
+            display: block;
+        }
+    }
+}
+
+.staff__image {
+    grid-column: 1 / -1;
+    grid-row: 1 / 2;
+}
+
+.staff__description-wrapper {
+    grid-column: 1 / -1;
+    grid-row: 1 / 2;
+    color: $color-default-white;
+}
+
+.staff__description {
+    display: none;
+}
