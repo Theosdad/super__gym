@@ -1,6 +1,11 @@
 .staff__container {
-    max-width: 1160px;
+    max-width: 1187px;
+    position: relative;
     margin: 0 auto;
+}
+
+.staff__slider {
+    max-width: 100%;
 }
 
 .staff__list {
@@ -8,9 +13,7 @@
     padding: 0;
     list-style-type: none;
 
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    column-gap: 3%;
+    column-gap: 40px;
 }
 
 .staff__item {
@@ -22,6 +25,7 @@
     &:focus-within {
         .staff__description-wrapper {
             background-color: rgba($sapphire, 0.89);
+            place-items: start center;
         }
 
         .staff__description {
@@ -39,8 +43,86 @@
     grid-column: 1 / -1;
     grid-row: 1 / 2;
     color: $color-default-white;
+    display: grid;
+    place-items: end center;
+    padding: 30px;
+
+    h3 {
+        margin: 0;
+        text-align: center;
+        font-size: 16px;
+        line-height: 24px;
+    }
 }
 
 .staff__description {
     display: none;
+
+    p {
+        color: $spindle;
+        margin: 0;
+        text-align: center;
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
+
+.staff__description-list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    padding-left: 30px;
+}
+
+.staff__description-item {
+    position: relative;
+    font-size: 14px;
+    line-height: 21px;
+    display: flex;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 7px;
+        left: -7%;
+        display: block;
+        width: 6px;
+        height: 6px;
+        background-color: $color-default-white;
+        border-radius: 50%;
+    }
+}
+
+.staff__button {
+    top: 13%;
+    border: none;
+    display: block;
+    background-color: transparent;
+    height: 87%;
+    margin: 0;
+
+    
+
+    &::before {
+        content: '';
+        display: block;
+        width: 23px;
+        height: 23px;
+        border: 1px solid $dark-gray;
+        border-top: none;
+        border-right: none;
+        transform: rotate(45deg);
+    }
+    
+    &--prev {
+        left: -4%;
+    }
+
+    &--next {
+        right: -4%;
+        
+        &::before {
+            transform: rotate(-135deg);
+        }
+    }
 }
