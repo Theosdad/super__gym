@@ -2,6 +2,17 @@
     max-width: 1187px;
     position: relative;
     margin: 0 auto;
+
+    h2 {
+        margin: 0;
+        margin-bottom: 48px;
+        padding-left: 15px;
+        font-family: $alumni;
+        font-weight: 600;
+        font-size: 54px;
+        line-height: 65px;
+        letter-spacing: 0.03em;
+    }
 }
 
 .staff__slider {
@@ -19,17 +30,30 @@
 .staff__item {
     display: grid;
     max-width: 260px;
+    max-height: 294px;
 
     &:hover,
     &:focus,
     &:focus-within {
         .staff__description-wrapper {
             background-color: rgba($sapphire, 0.89);
-            place-items: start center;
+            display: block;
+            max-height: inherit;
+            padding-top: 51px;
+            overflow-y: scroll;
+            scrollbar-width: none;
+
+            /* stylelint-disable */
+            &::-webkit-scrollbar {
+                display: none;
+            }
+
+            /* stylelint-enable */
         }
 
         .staff__description {
             display: block;
+            transform: translateY(-4px);
         }
     }
 }
@@ -45,13 +69,13 @@
     color: $color-default-white;
     display: grid;
     place-items: end center;
-    padding: 30px;
+    padding: 23px;
 
     h3 {
         margin: 0;
         text-align: center;
-        font-size: 16px;
-        line-height: 24px;
+        font-size: 18px;
+        line-height: 27px;
     }
 }
 
@@ -64,6 +88,7 @@
         text-align: center;
         font-size: 16px;
         line-height: 24px;
+        margin-bottom: 35px;
     }
 }
 
@@ -71,7 +96,7 @@
     margin: 0;
     padding: 0;
     list-style-type: none;
-    padding-left: 30px;
+    padding-left: 48px;
 }
 
 .staff__description-item {
@@ -79,12 +104,13 @@
     font-size: 14px;
     line-height: 21px;
     display: flex;
+    margin-bottom: 13px;
 
     &::before {
         content: "";
         position: absolute;
-        top: 7px;
-        left: -7%;
+        top: 6px;
+        left: -9.5%;
         display: block;
         width: 6px;
         height: 6px;
@@ -94,14 +120,12 @@
 }
 
 .staff__button {
-    top: 13%;
+    top: 20.4%;
     border: none;
     display: block;
     background-color: transparent;
     height: 87%;
     margin: 0;
-
-    
 
     &::before {
         content: '';
@@ -113,16 +137,33 @@
         border-right: none;
         transform: rotate(45deg);
     }
-    
+
     &--prev {
-        left: -4%;
+        left: -3.6%;
     }
 
     &--next {
-        right: -4%;
-        
+        right: -3.3%;
+
         &::before {
             transform: rotate(-135deg);
+        }
+    }
+
+    &:focus,
+    &:hover {
+        outline: none;
+
+        &::before {
+            border-bottom: 1px solid $crimson;
+            border-left: 1px solid $crimson;
+        }
+    }
+
+    &:active {
+        &::before {
+            border-bottom: 1px solid $cobalt;
+            border-left: 1px solid $cobalt;
         }
     }
 }

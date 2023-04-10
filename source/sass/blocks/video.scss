@@ -1,6 +1,6 @@
 .video__button {
     position: absolute;
-    top: 35%;
+    top: 34%;
     left: 40%;
     width: 72px;
     height: 72px;
@@ -31,7 +31,7 @@
 
     &::after {
         position: absolute;
-        top: -20%;
+        top: -19%;
         left: -20%;
         content: "";
         width: 100px;
@@ -47,4 +47,6 @@
 
 .video__icon {
     color: $color-default-white;
+    transform: translate(3px, 2px);
+    width: 13px;
 }

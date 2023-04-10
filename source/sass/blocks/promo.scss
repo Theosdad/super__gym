@@ -5,8 +5,8 @@
 .promo__container {
     max-width: 1160px;
     margin: 0 auto;
-    padding-top: 120px;
-    padding-bottom: 110px;
+    padding-top: 121px;
+    padding-bottom: 106px;
 }
 
 .promo__content {
@@ -16,7 +16,7 @@
 .promo__description {
     background-color: $torch-red;
     color: $color-default-white;
-    padding: 87px 78px;
+    padding: 81px 78px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     max-width: 500px;
@@ -30,6 +30,8 @@
         letter-spacing: 0.03em;
         text-transform: uppercase;
         margin: 0;
+        padding: 4px 1px;
+        padding-left: 11px;
     }
 
     p {
@@ -37,6 +39,7 @@
         line-height: 27px;
         margin: 0;
         grid-column: 1 / -1;
+        transform: translateY(-17px);
     }
 }
 
@@ -48,6 +51,7 @@
     dt {
         font-size: 18px;
         line-height: 27px;
+        margin-bottom: -1px;
     }
 
     dd {
@@ -58,6 +62,7 @@
         margin: 0;
         display: inline-flex;
         align-items: center;
+        margin-bottom: 9px;
 
         &::before {
             position: absolute;
@@ -91,6 +96,7 @@
     padding: 25px 110px;
     place-self: end;
     user-select: none;
+    transform: translateY(-3px);
 
     &:focus,
     &:hover {
