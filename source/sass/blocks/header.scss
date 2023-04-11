@@ -42,6 +42,10 @@
         margin-top: 0;
         padding-bottom: 82px;
     }
+
+    @media(max-width: $mobile-width) {
+        padding-bottom: 101px;
+    }
 }
 
 .header__description {

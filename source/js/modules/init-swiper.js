@@ -8,7 +8,23 @@ const initSwipers = () => {
             prevEl: '.swiper-button-prev',
         },
 
-        slidesPerView: 4,
+        breakpoints: {
+            // when window width is >= 320px
+            320: {
+                slidesPerView: 1,
+            },
+            // when window width is >= 768px
+            768: {
+                slidesPerView: 2,
+                slidesPerGroup: 2,
+                spaceBetween: 30,
+            },
+            // when window width is >= 1280px
+            1200: {
+                slidesPerView: 4,
+                slidesPerGroup: 4,
+            }
+        }
     });
 }
 
