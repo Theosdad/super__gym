@@ -2538,11 +2538,6 @@ button,
     padding-bottom: 183px;
   }
 
-  .hero__container {
-    padding: 64px 0;
-    padding-bottom: 70px;
-  }
-
   .hero__content {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
@@ -2652,10 +2647,6 @@ button,
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
     row-gap: 40px;
-  }
-
-  .tab__list:not([hidden]) {
-    row-gap: 33px;
   }
 
   .tab__item {
@@ -2847,6 +2838,11 @@ button,
     min-width: 113px;
   }
 
+  .hero__container {
+    padding: 64px 0;
+    padding-bottom: 70px;
+  }
+
   .hero__description {
     padding: 0 15px;
     margin-bottom: 25px;
@@ -2920,6 +2916,10 @@ button,
 
   .tab__button--active::after {
     width: calc(100% + 7px);
+  }
+
+  .tab__list:not([hidden]) {
+    row-gap: 33px;
   }
 
   .tab__item {
