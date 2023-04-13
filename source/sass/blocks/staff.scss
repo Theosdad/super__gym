@@ -41,15 +41,16 @@
 .staff__content {
     display: flex;
     padding: 0 10px;
-    padding-bottom: 50px;
+    padding-bottom: 140px;
 
     @media(max-width: $tablet-width) {
         padding: 0 45px;
+        padding-bottom: 100px;
     }
 
     @media(max-width: $mobile-width) {
         padding: 0 15px;
-        padding-bottom: 50px;
+        padding-bottom: 69px;
     }
 }
 
