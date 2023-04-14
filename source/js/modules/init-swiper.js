@@ -1,11 +1,11 @@
-const initSwipers = () => {
-    const slider = new Swiper('.swiper', {
+const initStaffSwiper = () => {
+    const staffSlider = new Swiper('.swiper--staff', {
         direction: 'horizontal',
         loop: true,
 
         navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
+            nextEl: '.staff__button--next',
+            prevEl: '.staff__button--prev',
         },
 
         breakpoints: {
@@ -19,7 +19,7 @@ const initSwipers = () => {
                 slidesPerGroup: 2,
                 spaceBetween: 30,
             },
-            // when window width is >= 1280px
+            // when window width is >= 1200px
             1200: {
                 slidesPerView: 4,
                 slidesPerGroup: 4,
@@ -28,4 +28,18 @@ const initSwipers = () => {
     });
 }
 
-initSwipers();
+const initFeedbackSwiper = () => {
+    const feedbackSlider = new Swiper('.swiper--feedback', {
+        direction: 'horizontal',
+
+        navigation: {
+            nextEl: '.feedback__button--next',
+            prevEl: '.feedback__button--prev',
+        },
+
+        slidesPerView: 1,
+    });
+}
+
+initStaffSwiper();
+initFeedbackSwiper();
