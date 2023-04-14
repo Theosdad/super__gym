@@ -284,7 +284,7 @@
           <button class="staff__button staff__button--prev swiper-button-prev" type="button">
             <span class="visually-hidden">Предыдущий слайд.</span>
           </button>
-          <div class="staff__slider swiper">
+          <div class="staff__slider swiper swiper--staff">
             <ul class="staff__list swiper-wrapper">
               <!-- Анна Павлова -->
               <li class="staff__item swiper-slide" tabindex="0">
@@ -527,6 +527,126 @@
             </div>
           </li>
         </ul>
+      </div>
+    </section>
+    <section class="commercial">
+      <div class="commercial__container">
+        <h2>Акции</h2>
+        <div class="commercial__content">
+          <article class="commercial__offer">
+            <div class="commercial__description">
+              <h3>Год</h3>
+              <span>4999</span>
+              <p>Безлимитный абонемент в&nbsp;тренажерный зал</p>
+              <a href="#!">Подробнее</a>
+            </div>
+            <div class="commercial__image">
+              <picture>
+                <source type="image/webp" media="(max-width: 767px)"
+                  srcset="./img/commercial/commercial-image-mobile.webp 1x, ./img/commercial/commercial-image-mobile@2x.webp 2x">
+                <source type="image/webp" media="(max-width: 1199px)"
+                  srcset="./img/commercial/commercial-image-tablet.webp 1x, ./img/commercial/commercial-image-tablet@2x.webp 2x">
+                <source type="image/webp"
+                  srcset="./img/commercial/commercial-image.webp 1x, ./img/commercial/commercial-image@2x.webp 2x">
+                <source media="(max-width: 767px)"
+                  srcset="./img/commercial/commercial-image-mobile.jpg 1x, ./img/commercial/commercial-image-mobile@2x.jpg 2x">
+                <source media="(max-width: 1199px)"
+                  srcset="./img/commercial/commercial-image-tablet.jpg 1x, ./img/commercial/commercial-image-tablet@2x.jpg 2x">
+                <img src="./img/commercial/commercial-image.jpg" srcset="./img/commercial/commercial-image@2x.jpg 2x"
+                  width="280" height="462" alt="Фотография спортивной девушки, которая неимоверно рада акционной цене.">
+              </picture>
+            </div>
+          </article>
+          <article class="commercial__discount">
+            <ul class="commercial__discount-list">
+              <li class="commercial__discount-item">
+                <h3>Месяц бесплатно</h3>
+                <p>Приведи друга, получи абонемент в&nbsp;подарок</p>
+                <a href="#!">Подробнее</a>
+              </li>
+              <li class="commercial__discount-item">
+                <h3>Скидка&nbsp;20%</h3>
+                <p>Корпоративный фитнес&ensp;с&nbsp;командой</p>
+                <a href="#!">Подробнее</a>
+              </li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section class="feedback">
+      <div class="feedback__container">
+        <h2>Отзывы</h2>
+        <div class="feedback__content">
+          <button class="feedback__button feedback__button--prev swiper-button-prev" type="button">
+            <span class="visually-hidden">Предыдущий слайд.</span>
+          </button>
+          <div class="swiper swiper--feedback">
+            <ul class="feedback__list swiper-wrapper">
+              <li class="feedback__item swiper-slide">
+                <div class="feedback__image">
+                  <picture>
+                    <source type="image/webp" media="(max-width: 767px)"
+                      srcset="./img/feedback/feedback-image-1-mobile.webp 1x, ./img/feedback/feedback-image-1-mobile@2x.webp 2x">
+                    <source type="image/webp"
+                      srcset="./img/feedback/feedback-image-1.webp 1x, ./img/feedback/feedback-image-1@2x.webp 2x">
+                    <source media="(max-width: 767px)"
+                      srcset="./img/feedback/feedback-image-1-mobile.png 1x, ./img/feedback/feedback-image-1-mobile@2x.png 2x">
+                    <img src="./img/feedback/feedback-image-1.png" srcset="./img/feedback/feedback-image-1@2x.png 2x"
+                      width="80" height="80" alt="Фотография пользователя оставившего отзыв">
+                  </picture>
+                </div>
+                <div class="feedback__description">
+                  <h3>Анна Орлова</h3>
+                  <p>&laquo;Хожу в&nbsp;SuperClub уже больше года. Нравится, что в&nbsp;клубе всегда чисто, тренажеры
+                    обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей&raquo;</p>
+                </div>
+              </li>
+              <li class="feedback__item swiper-slide">
+                <div class="feedback__image">
+                  <picture>
+                    <source type="image/webp" media="(max-width: 767px)"
+                      srcset="./img/feedback/feedback-image-2-mobile.webp 1x, ./img/feedback/feedback-image-2-mobile@2x.webp 2x">
+                    <source type="image/webp"
+                      srcset="./img/feedback/feedback-image-2.webp 1x, ./img/feedback/feedback-image-2@2x.webp 2x">
+                    <source media="(max-width: 767px)"
+                      srcset="./img/feedback/feedback-image-2-mobile.png 1x, ./img/feedback/feedback-image-2-mobile@2x.png 2x">
+                    <img src="./img/feedback/feedback-image-2.png" srcset="./img/feedback/feedback-image-2@2x.png 2x"
+                      width="80" height="80" alt="Фотография пользователя оставившего отзыв">
+                  </picture>
+                </div>
+                <div class="feedback__description">
+                  <h3>Борат Сагдиев</h3>
+                  <p>&laquo;Занимаюсь в&nbsp;клубе уже три года, сервис отменный, клуб развивается, идет в&nbsp;ногу
+                    со&nbsp;временем. Тренажеров много, у&nbsp;них прекрасное расположение, все удобно
+                    и&nbsp;полезно!&raquo;</p>
+                </div>
+              </li>
+              <li class="feedback__item swiper-slide">
+                <div class="feedback__image">
+                  <picture>
+                    <source type="image/webp" media="(max-width: 767px)"
+                      srcset="./img/feedback/feedback-image-3-mobile.webp 1x, ./img/feedback/feedback-image-3-mobile@2x.webp 2x">
+                    <source type="image/webp"
+                      srcset="./img/feedback/feedback-image-3.webp 1x, ./img/feedback/feedback-image-3@2x.webp 2x">
+                    <source media="(max-width: 767px)"
+                      srcset="./img/feedback/feedback-image-3-mobile.png 1x, ./img/feedback/feedback-image-3-mobile@2x.png 2x">
+                    <img src="./img/feedback/feedback-image-3.png" srcset="./img/feedback/feedback-image-3@2x.png 2x"
+                      width="80" height="80" alt="Фотография пользователя оставившего отзыв">
+                  </picture>
+                </div>
+                <div class="feedback__description">
+                  <h3>Увувуэвуэ Онyтенуэ Угуэмуэм Осас</h3>
+                  <p>&laquo;Огромное спасибо хочу сказать тренерскому составу клуба, особенно тренеру Валентину.
+                    Профессионал, любящий свою работу.&raquo;</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <button class="feedback__button feedback__button--next swiper-button-next" type="button">
+            <span class="visually-hidden">Следующий слайд.</span>
+          </button>
+        </div>
       </div>
     </section>
   </main>
