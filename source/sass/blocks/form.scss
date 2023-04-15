@@ -1,0 +1,156 @@
+.form {
+  place-self: stretch end;
+  background-color: $sapphire;
+  color: $color-default-white;
+  padding: 55px 170px;
+  padding-left: 100vw;
+  padding-bottom: 69px;
+
+  @media (max-width: $tablet-width) {
+    padding: 62px 0;
+    padding-bottom: 69px;
+    width: 100%;
+  }
+
+  h2 {
+    font-family: $alumni;
+    font-weight: 800;
+    font-size: 54px;
+    line-height: 84px;
+    letter-spacing: 0.03em;
+    margin: 0;
+    margin-bottom: 17px;
+
+    @media (max-width: $tablet-width) {
+      font-weight: 700;
+      font-size: 42px;
+      line-height: 50px;
+      letter-spacing: 0.03em;
+      margin-bottom: 31px;
+    }
+
+    @media (max-width: $mobile-width) {
+      font-weight: 600;
+      font-size: 32px;
+      line-height: 38px;
+      margin-bottom: 35px;
+    }
+  }
+}
+
+.form__container {
+  @media (max-width: $tablet-width) {
+    max-width: 530px;
+    padding: 0 15px;
+    margin: 0 auto;
+  }
+}
+
+.form__input-wrapper {
+  display: grid;
+  grid-template-columns: min-content min-content;
+  gap: 30px;
+
+  @media (max-width: $tablet-width) {
+    column-gap: 60px;
+  }
+
+  @media (max-width: $mobile-width) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.form__input {
+  & input:not([type="submit"]) {
+    border: none;
+    border-bottom: 1px solid $light-state-grey;
+    width: 190px;
+    padding: 6px 0;
+    color: $dark-cerulean;
+    font-family: $roboto;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+
+    position: relative;
+
+    @media (max-width: $tablet-width) {
+      width: 206px;
+    }
+
+    @media (max-width: $mobile-width) {
+      width: 100%;
+    }
+
+    &::placeholder {
+      color: $color-default-white;
+      background-color: $sapphire;
+      padding: 6px 0;
+      font-family: $roboto;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 16px;
+    }
+
+    &:active,
+    &:focus,
+    &:hover {
+      outline: none;
+
+      &::placeholder {
+        background: linear-gradient(to top right, $sapphire 0 50%, $venetian-red 70%, $sapphire 100%);
+      }
+    }
+  }
+
+  &--button {
+    grid-column: 1 / -1;
+    background-color: $sapphire;
+    color: $color-default-white;
+    border: 3px solid $color-default-white;
+    padding: 17px 0;
+    padding-bottom: 16px;
+    margin: 0 -2px;
+    margin-top: -3px;
+    font-family: $roboto;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    user-select: none;
+    cursor: pointer;
+
+    @media (max-width: $tablet-width) {
+      margin-right: 0;
+    }
+
+    @media (max-width: $mobile-width) {
+      margin-right: -2px;
+      margin-top: 7px;
+    }
+
+    &:hover,
+    &:focus {
+      background-color: $color-default-white;
+      color: $sapphire;
+      border-color: $black-russian;
+    }
+
+    &:active {
+      opacity: 0.8;
+    }
+  }
+
+  label {
+    position: relative;
+  }
+
+  span {
+    position: absolute;
+    top: 30px;
+    left: 0;
+    font-size: 12px;
+    color: $venetian-red;
+  }
+}

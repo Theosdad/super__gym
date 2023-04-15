@@ -1,0 +1,24 @@
+.social {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 11px;
+
+  @media (max-width: $mobile-width) {
+    max-width: 97px;
+  }
+}
+
+.social__link {
+  color: $color-default-white;
+
+  &:focus,
+  &:hover {
+    outline: none;
+    color: $venetian-red;
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.9;
+  }
+}

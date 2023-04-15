@@ -1,0 +1,130 @@
+.footer {
+  width: 100%;
+  background-color: $black-russian;
+}
+
+.footer__container {
+  max-width: 1250px;
+  margin: 0 auto;
+  padding: 42px 40px;
+
+  @media (max-width: $mobile-width) {
+    padding: 46px 15px;
+  }
+}
+
+.footer__content {
+  display: flex;
+  align-items: normal;
+
+  @media (max-width: $mobile-width) {
+    flex-direction: column;
+    position: relative;
+  }
+}
+
+.footer__logo {
+  color: $color-default-white;
+  margin-right: auto;
+  transform: translate(5px, 0);
+
+  @media (max-width: $tablet-width) {
+    transform: translate(5px, 5px);
+  }
+
+  @media (max-width: $mobile-width) {
+    transform: translateY(1px);
+    margin: 0;
+    position: absolute;
+  }
+
+  &-icon {
+    @media (max-width: $tablet-width) {
+      width: 82px;
+      height: 18px;
+    }
+
+    @media (max-width: $mobile-width) {
+      width: 68px;
+      height: 15px;
+    }
+  }
+
+  &:focus,
+  &:hover {
+    outline: none;
+    color: $venetian-red;
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.9;
+  }
+}
+
+.footer__list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+
+  display: grid;
+  grid-template-columns: repeat(5, max-content);
+  column-gap: 40px;
+  row-gap: 10px;
+  margin-right: auto;
+  transform: translate(5px, -2px);
+
+  @media (max-width: $tablet-width) {
+    column-gap: 30px;
+    transform: translate(7px, 2px);
+  }
+
+  @media (max-width: $mobile-width) {
+    margin: 0;
+    margin-bottom: 32px;
+    transform: none;
+    display: block;
+    column-count: 2;
+  }
+}
+
+.footer__item {
+  max-width: 250px;
+
+  @media (max-width: $mobile-width) {
+    &:first-child {
+      margin-top: 39px;
+    }
+
+    margin-top: 16px;
+  }
+}
+
+.footer__link {
+  color: $color-default-white;
+  font-size: 14px;
+  line-height: 16px;
+
+  @media (max-width: $mobile-width) {
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  &:focus,
+  &:hover {
+    outline: none;
+    color: $venetian-red;
+    border-bottom: 1px solid $venetian-red;
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.9;
+  }
+}
+
+.footer__social {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}

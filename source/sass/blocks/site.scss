@@ -1,0 +1,13 @@
+.site {
+  flex: 1;
+}
+
+.site-wrapper {
+  display: grid;
+  overflow-x: hidden;
+  grid-template-columns: repeat(2, 50vw);
+
+  @media (max-width: $tablet-width) {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,147 @@
+.contacts {
+  padding: 55px 120px;
+  padding-right: calc(100% - 400px);
+  border-top: 1px solid $light-state-grey;
+
+  @media (max-width: $tablet-width) {
+    padding: 62px 0;
+    border: none;
+  }
+
+  h2 {
+    font-family: $alumni;
+    font-weight: 600;
+    font-size: 54px;
+    line-height: 65px;
+    letter-spacing: 0.03em;
+    margin: 0;
+    margin-bottom: 38px;
+
+    @media (max-width: $tablet-width) {
+      font-size: 42px;
+      line-height: 50px;
+      margin-bottom: 32px;
+    }
+
+    @media (max-width: $mobile-width) {
+      font-size: 32px;
+      line-height: 38px;
+      margin-bottom: 36px;
+    }
+  }
+}
+
+.contacts__container {
+  @media (max-width: $tablet-width) {
+    max-width: 530px;
+    padding: 0 15px;
+    margin: 0 auto;
+  }
+}
+
+.contacts__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+
+  position: relative;
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  row-gap: 18px;
+  column-gap: 121px;
+  padding-left: 4px;
+
+  @media (max-width: $tablet-width) {
+    padding: 0;
+    column-gap: 96px;
+    row-gap: 19px;
+  }
+
+  @media (max-width: $mobile-width) {
+    grid-template-columns: 1fr;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 1px;
+    height: 90%;
+    background-color: $light-state-grey;
+    top: 6px;
+    left: 83.4%;
+
+    @media (max-width: $tablet-width) {
+      top: 8px;
+      left: 53%;
+    }
+
+    @media (max-width: $mobile-width) {
+      display: none;
+    }
+  }
+}
+
+.contacts__item {
+  max-width: 170px;
+
+  @media (max-width: $tablet-width) {
+    max-width: 218px;
+  }
+
+  @media (max-width: $mobile-width) {
+    max-width: none;
+
+    &:nth-child(2n) {
+      order: 1;
+    }
+  }
+
+  h3 {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0;
+
+    @media (max-width: $tablet-width) {
+      font-size: 20px;
+      line-height: 30px;
+      margin-bottom: 6px;
+    }
+  }
+
+  address,
+  p,
+  a {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    margin: 0;
+
+    @media (max-width: $tablet-width) {
+      font-size: 18px;
+      line-height: 27px;
+    }
+  }
+
+  address,
+  p {
+    padding-top: 3px;
+
+    @media (max-width: $tablet-width) {
+      padding: 0;
+    }
+  }
+
+  a {
+    display: inline;
+    color: $sapphire;
+
+    &:focus,
+    &:hover {
+      outline: none;
+      color: $venetian-red;
+      border-bottom: 1px solid $venetian-red;
+    }
+  }
+}
