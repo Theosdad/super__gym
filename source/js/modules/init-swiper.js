@@ -7,7 +7,7 @@ const initStaffSwiper = () => {
       nextEl: '.staff__button--next',
       prevEl: '.staff__button--prev',
     },
-
+    maxBackfaceHiddenSlides: 0,
     breakpoints: {
       // when window width is >= 320px
       320: {

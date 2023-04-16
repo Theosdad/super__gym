@@ -178,6 +178,8 @@
 
 .header__image {
   @media (max-width: $mobile-width) {
-    display: none;
+    img {
+      display: none;
+    }
   }
 }
