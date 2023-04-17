@@ -1,6 +1,7 @@
 const video = document.querySelector('.video');
 const link = document.querySelector('.video__link');
 const button = document.querySelector('.video__button');
+const iframeBlock = video.querySelector('[data-video-container]');
 link.removeAttribute('href');
 
 const createIframe = (block) => {
@@ -15,9 +16,10 @@ const createIframe = (block) => {
 };
 
 button.addEventListener('click', () => {
-  button.remove();
-  link.remove();
-  const iframeBlock = video.querySelector('[data-video-container]');
-  const newIframe = createIframe(iframeBlock);
-  iframeBlock.append(newIframe);
+  if (video && iframeBlock) {
+    button.remove();
+    link.remove();
+    const newIframe = createIframe(iframeBlock);
+    iframeBlock.append(newIframe);
+  }
 });
