@@ -2949,7 +2949,7 @@ button,
   flex: 1;
 }
 
-.site-wrapper {
+.site__wrapper {
   display: -ms-grid;
   display: grid;
   overflow-x: hidden;
@@ -3838,7 +3838,7 @@ button,
     padding: 54px 65px 32px;
   }
 
-  .site-wrapper {
+  .site__wrapper {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
   }
