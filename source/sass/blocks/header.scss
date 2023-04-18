@@ -177,6 +177,8 @@
 }
 
 .header__image {
+  background-color: $endeavour;
+
   @media (max-width: $mobile-width) {
     img {
       display: none;

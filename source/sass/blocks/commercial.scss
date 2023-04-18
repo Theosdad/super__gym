@@ -242,6 +242,7 @@
 
 .commercial__image {
   flex-shrink: 0;
+  background-color: $royal-blue;
 
   img {
     @media (max-width: $tablet-width) {

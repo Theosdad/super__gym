@@ -195,6 +195,8 @@
 }
 
 .promo__image {
+  background-color: $midnight-blue;
+
   @media (max-width: $tablet-width) {
     width: 56.9%;
   }
