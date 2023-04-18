@@ -1636,6 +1636,10 @@ button,
   opacity: 0.7;
 }
 
+.header__image {
+  background-color: #125397;
+}
+
 .nav {
   display: -ms-grid;
   display: grid;
@@ -1784,6 +1788,7 @@ button,
   -ms-grid-row-align: start;
   -ms-grid-column-align: end;
   place-self: start end;
+  background-color: #e7eaf9;
 }
 
 .hero__video {
@@ -2244,6 +2249,10 @@ button,
 .promo__button:active {
   background-color: #003eb7;
   border-color: #003eb7;
+}
+
+.promo__image {
+  background-color: #010147;
 }
 
 .promo__image img {
@@ -2821,6 +2830,7 @@ button,
 .commercial__image {
   -ms-flex-negative: 0;
   flex-shrink: 0;
+  background-color: #487be4;
 }
 
 .feedback__container {
