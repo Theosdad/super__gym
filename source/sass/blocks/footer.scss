@@ -52,7 +52,6 @@
 
   &:focus,
   &:hover {
-    outline: none;
     color: $venetian-red;
     opacity: 0.7;
   }
@@ -112,7 +111,6 @@
 
   &:focus,
   &:hover {
-    outline: none;
     color: $venetian-red;
     border-bottom: 1px solid $venetian-red;
     opacity: 0.7;

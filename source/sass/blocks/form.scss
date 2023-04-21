@@ -93,10 +93,15 @@
     }
 
     &:active,
-    &:focus,
     &:hover {
       outline: none;
 
+      &::placeholder {
+        background: linear-gradient(to top right, $sapphire 0 50%, $venetian-red 70%, $sapphire 100%);
+      }
+    }
+
+    &:focus {
       &::placeholder {
         background: linear-gradient(to top right, $sapphire 0 50%, $venetian-red 70%, $sapphire 100%);
       }

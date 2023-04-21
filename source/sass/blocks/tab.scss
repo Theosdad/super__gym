@@ -58,7 +58,6 @@
 
   &:focus,
   &:hover {
-    outline: none;
     color: rgba($sapphire, 0.7);
   }
 
@@ -241,7 +240,6 @@
 
   &:hover,
   &:focus {
-    outline: none;
     border: none;
     padding: 27px 45px;
     color: $color-default-white;
