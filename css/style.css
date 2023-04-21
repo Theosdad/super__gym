@@ -1627,7 +1627,6 @@ button,
 
 .header__button:focus,
 .header__button:hover {
-  outline: none;
   background-color: #ffffff;
   color: #102654;
 }
@@ -1671,7 +1670,6 @@ button,
 
 .nav__logo:focus,
 .nav__logo:hover {
-  outline: none;
   color: #030a1a;
   opacity: 0.7;
 }
@@ -1693,7 +1691,6 @@ button,
 .nav__phone:focus-visible,
 .nav__phone:focus,
 .nav__phone:hover {
-  outline: none;
   color: #030a1a;
   opacity: 0.7;
 }
@@ -1717,7 +1714,6 @@ button,
 
 .site-list__link:focus,
 .site-list__link:hover {
-  outline: none;
   border-bottom: 1px solid #f8f9fc;
   opacity: 0.7;
 }
@@ -1951,7 +1947,6 @@ button,
 
 .tab__button:focus,
 .tab__button:hover {
-  outline: none;
   color: rgba(16, 38, 84, 0.7);
 }
 
@@ -2095,7 +2090,6 @@ button,
 
 .tab__button-buy:hover,
 .tab__button-buy:focus {
-  outline: none;
   border: none;
   padding: 27px 45px;
   color: #ffffff;
@@ -2241,7 +2235,6 @@ button,
 
 .promo__button:focus,
 .promo__button:hover {
-  outline: none;
   background-color: #ffffff;
   color: #ed0233;
 }
@@ -2735,7 +2728,6 @@ button,
 
 .commercial__description a:hover,
 .commercial__description a:focus {
-  outline: none;
   color: rgba(16, 58, 174, 0.8);
   border-bottom: 1px solid rgba(16, 58, 174, 0.8);
 }
@@ -2802,7 +2794,6 @@ button,
 
 .commercial__discount-item a:hover,
 .commercial__discount-item a:focus {
-  outline: none;
   color: rgba(209, 10, 66, 0.8);
   border-bottom: 1px solid rgba(209, 10, 66, 0.8);
 }
@@ -3062,39 +3053,56 @@ button,
 }
 
 .form__input input:not([type=submit]):active,
-.form__input input:not([type=submit]):focus,
 .form__input input:not([type=submit]):hover {
   outline: none;
 }
 
 .form__input input:not([type=submit]):active::-webkit-input-placeholder,
-.form__input input:not([type=submit]):focus::-webkit-input-placeholder,
 .form__input input:not([type=submit]):hover::-webkit-input-placeholder {
   background: -webkit-gradient(linear, left bottom, right top, color-stop(0, #102654), color-stop(70%, #b80027), to(#102654));
   background: linear-gradient(to top right, #102654 0 50%, #b80027 70%, #102654 100%);
 }
 
 .form__input input:not([type=submit]):active::-moz-placeholder,
-.form__input input:not([type=submit]):focus::-moz-placeholder,
 .form__input input:not([type=submit]):hover::-moz-placeholder {
   background: linear-gradient(to top right, #102654 0 50%, #b80027 70%, #102654 100%);
 }
 
 .form__input input:not([type=submit]):active:-ms-input-placeholder,
-.form__input input:not([type=submit]):focus:-ms-input-placeholder,
 .form__input input:not([type=submit]):hover:-ms-input-placeholder {
   background: linear-gradient(to top right, #102654 0 50%, #b80027 70%, #102654 100%);
 }
 
 .form__input input:not([type=submit]):active::-ms-input-placeholder,
-.form__input input:not([type=submit]):focus::-ms-input-placeholder,
 .form__input input:not([type=submit]):hover::-ms-input-placeholder {
   background: linear-gradient(to top right, #102654 0 50%, #b80027 70%, #102654 100%);
 }
 
 .form__input input:not([type=submit]):active::placeholder,
-.form__input input:not([type=submit]):focus::placeholder,
 .form__input input:not([type=submit]):hover::placeholder {
+  background: -webkit-gradient(linear, left bottom, right top, color-stop(0, #102654), color-stop(70%, #b80027), to(#102654));
+  background: -o-linear-gradient(bottom left, #102654 0 50%, #b80027 70%, #102654 100%);
+  background: linear-gradient(to top right, #102654 0 50%, #b80027 70%, #102654 100%);
+}
+
+.form__input input:not([type=submit]):focus::-webkit-input-placeholder {
+  background: -webkit-gradient(linear, left bottom, right top, color-stop(0, #102654), color-stop(70%, #b80027), to(#102654));
+  background: linear-gradient(to top right, #102654 0 50%, #b80027 70%, #102654 100%);
+}
+
+.form__input input:not([type=submit]):focus::-moz-placeholder {
+  background: linear-gradient(to top right, #102654 0 50%, #b80027 70%, #102654 100%);
+}
+
+.form__input input:not([type=submit]):focus:-ms-input-placeholder {
+  background: linear-gradient(to top right, #102654 0 50%, #b80027 70%, #102654 100%);
+}
+
+.form__input input:not([type=submit]):focus::-ms-input-placeholder {
+  background: linear-gradient(to top right, #102654 0 50%, #b80027 70%, #102654 100%);
+}
+
+.form__input input:not([type=submit]):focus::placeholder {
   background: -webkit-gradient(linear, left bottom, right top, color-stop(0, #102654), color-stop(70%, #b80027), to(#102654));
   background: -o-linear-gradient(bottom left, #102654 0 50%, #b80027 70%, #102654 100%);
   background: linear-gradient(to top right, #102654 0 50%, #b80027 70%, #102654 100%);
@@ -3222,7 +3230,6 @@ button,
 
 .contacts__item a:focus,
 .contacts__item a:hover {
-  outline: none;
   color: #b80027;
   border-bottom: 1px solid #b80027;
 }
@@ -3257,7 +3264,6 @@ button,
 
 .footer__logo:focus,
 .footer__logo:hover {
-  outline: none;
   color: #b80027;
   opacity: 0.7;
 }
@@ -3298,7 +3304,6 @@ button,
 
 .footer__link:focus,
 .footer__link:hover {
-  outline: none;
   color: #b80027;
   border-bottom: 1px solid #b80027;
   opacity: 0.7;
