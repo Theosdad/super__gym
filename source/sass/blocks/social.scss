@@ -2,9 +2,16 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 11px;
+  margin-right: 6px;
+
+  @media (max-width: $tablet-width) {
+    margin: 0;
+    padding-top: 4px;
+  }
 
   @media (max-width: $mobile-width) {
     max-width: 97px;
+    padding: 0;
   }
 }
 

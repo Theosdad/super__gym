@@ -2458,7 +2458,7 @@ button,
   max-width: 1130px;
   margin: 0 auto;
   padding: 97px 45px;
-  padding-bottom: 140px;
+  padding-bottom: 135px;
 }
 
 .advantages__container h2 {
@@ -2485,10 +2485,7 @@ button,
   -ms-grid-columns: (1fr)[3];
   grid-template-columns: repeat(3, 1fr);
   grid-auto-flow: dense;
-  gap: 15%;
-  -webkit-column-gap: 0;
-  -moz-column-gap: 0;
-  column-gap: 0;
+  row-gap: 105px;
 }
 
 .advantages__item {
@@ -2504,6 +2501,7 @@ button,
   -webkit-column-gap: 9.2%;
   -moz-column-gap: 9.2%;
   column-gap: 9.2%;
+  padding-top: 46px;
 }
 
 .advantages__item--accent {
@@ -2557,7 +2555,7 @@ button,
   width: 98%;
   background-color: rgba(209, 10, 66, 0.2);
   position: absolute;
-  top: -27px;
+  top: -26px;
   left: 1px;
 }
 
@@ -3325,6 +3323,7 @@ button,
   -ms-grid-columns: (1fr)[3];
   grid-template-columns: repeat(3, 1fr);
   gap: 11px;
+  margin-right: 6px;
 }
 
 .social__link {
@@ -3687,7 +3686,7 @@ button,
   }
 
   .staff__description-wrapper {
-    padding-bottom: 32px;
+    padding-bottom: 23px;
     padding-left: 32px;
   }
 
@@ -3715,6 +3714,10 @@ button,
     -ms-grid-columns: (1fr)[2];
     grid-template-columns: repeat(2, 1fr);
     gap: 0;
+  }
+
+  .advantages__item {
+    padding: 0;
   }
 
   .advantages__item--accent {
@@ -3962,6 +3965,11 @@ button,
     -webkit-transform: translate(7px, 2px);
     -ms-transform: translate(7px, 2px);
     transform: translate(7px, 2px);
+  }
+
+  .social {
+    margin: 0;
+    padding-top: 4px;
   }
 }
 
@@ -4505,6 +4513,10 @@ button,
     margin-top: 7px;
   }
 
+  .contacts {
+    padding-top: 64px;
+  }
+
   .contacts h2 {
     font-size: 32px;
     line-height: 38px;
@@ -4557,7 +4569,7 @@ button,
 
   .footer__list {
     margin: 0;
-    margin-bottom: 32px;
+    margin-bottom: 28px;
     -webkit-transform: none;
     -ms-transform: none;
     transform: none;
@@ -4582,5 +4594,6 @@ button,
 
   .social {
     max-width: 97px;
+    padding: 0;
   }
 }
