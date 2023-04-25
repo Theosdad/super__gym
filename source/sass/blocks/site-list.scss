@@ -18,19 +18,3 @@
     min-width: 113px;
   }
 }
-
-.site-list__link {
-  color: $color-default-white;
-
-  &:focus,
-  &:hover {
-    border-bottom: 1px solid $ghost-white;
-    opacity: 0.7;
-  }
-
-  &:active {
-    opacity: 0.9;
-    color: $black-russian;
-    border-bottom: 1px solid $black-russian;
-  }
-}
