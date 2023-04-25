@@ -1708,22 +1708,6 @@ button,
   padding-top: 57px;
 }
 
-.site-list__link {
-  color: #ffffff;
-}
-
-.site-list__link:focus,
-.site-list__link:hover {
-  border-bottom: 1px solid #f8f9fc;
-  opacity: 0.7;
-}
-
-.site-list__link:active {
-  opacity: 0.9;
-  color: #030a1a;
-  border-bottom: 1px solid #030a1a;
-}
-
 .hero {
   width: 100%;
 }
