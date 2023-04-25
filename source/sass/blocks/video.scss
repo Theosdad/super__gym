@@ -89,7 +89,8 @@
     border: none;
 
     @media (max-width: $tablet-width) {
-      height: 167px;
+      height: auto;
+      aspect-ratio: 1.59 / 1;
     }
 
     @media (max-width: $mobile-width) {

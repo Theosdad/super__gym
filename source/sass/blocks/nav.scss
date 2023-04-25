@@ -1,15 +1,12 @@
 .nav {
   display: grid;
+  grid-auto-flow: dense;
   grid-template-columns: 1fr auto 1fr;
 
-  a:nth-child(odd) {
+  a:not(.nav__phone) {
     grid-column: 1 / 2;
     place-self: start;
-  }
-
-  a:nth-child(even) {
-    grid-column: 3 / 4;
-    place-self: start end;
+    grid-row: auto;
   }
 
   &__logo {
@@ -34,6 +31,9 @@
     line-height: 31px;
     letter-spacing: 0.03em;
     color: $color-default-white;
+    grid-column: 3 / 4;
+    grid-row: auto;
+    place-self: start end;
 
     &:focus-visible,
     &:focus,

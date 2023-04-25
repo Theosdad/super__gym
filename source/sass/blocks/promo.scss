@@ -161,12 +161,16 @@
   font-size: 12px;
   line-height: 14px;
   letter-spacing: 0.05em;
-  display: inline-flex;
+  display: flex;
   align-self: center;
   padding: 25px 110px;
-  place-self: end;
+  place-self: end center;
   user-select: none;
   transform: translateY(-3px);
+
+  span {
+    margin: 0 auto;
+  }
 
   @media (max-width: $tablet-width) {
     font-size: 10px;

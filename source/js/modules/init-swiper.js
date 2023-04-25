@@ -22,6 +22,11 @@ const initStaffSwiper = () => {
       },
       // when window width is >= 1200px
       1200: {
+        slidesPerView: 3,
+        slidesPerGroup: 1,
+      },
+      // when window width is >= 1200px
+      1280: {
         slidesPerView: 4,
         slidesPerGroup: 4,
       },

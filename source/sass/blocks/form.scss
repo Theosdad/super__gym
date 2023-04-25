@@ -7,7 +7,7 @@
   padding-bottom: 69px;
 
   @media (max-width: $tablet-width) {
-    padding: 62px 0;
+    padding: 63px 0;
     padding-bottom: 69px;
     width: 100%;
   }
@@ -66,11 +66,12 @@
     border-bottom: 1px solid $light-state-grey;
     width: 190px;
     padding: 6px 0;
-    color: $dark-cerulean;
+    color: $ghost-white;
     font-family: $roboto;
     font-weight: 400;
     font-size: 14px;
     line-height: 16px;
+    background-color: transparent;
 
     position: relative;
 

@@ -7,33 +7,23 @@
   position: relative;
   width: 341px;
   margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(3, min-content);
+  column-gap: 45px;
+  row-gap: 30px;
   margin-bottom: 53px;
 
 
   @media (max-width: $tablet-width) {
     width: 332px;
     margin-bottom: 58px;
+    column-gap: 54px;
   }
 
   @media (max-width: $mobile-width) {
-    width: 100%;
+    width: 290px;
     margin-bottom: 48px;
-  }
-
-  &::after {
-    position: absolute;
-    left: 0;
-    bottom: -15px;
-    content: "";
-    height: 2px;
-    width: 100%;
-    background-color: rgba($grey, 0.2);
-
-    @media (max-width: $tablet-width) {
-      bottom: -14px;
-    }
+    column-gap: 45px;
   }
 }
 
@@ -54,6 +44,28 @@
   @media (max-width: $mobile-width) {
     font-size: 16px;
     line-height: 24px;
+  }
+
+  &:nth-child(3n+1) {
+    position: relative;
+    &::before {
+      position: absolute;
+      left: 0;
+      bottom: -15px;
+      content: "";
+      height: 2px;
+      width: 341px;
+      background-color: rgba($grey, 0.2);
+
+      @media (max-width: $tablet-width) {
+        bottom: -14px;
+        width: 332px;
+      }
+
+      @media (max-width: $mobile-width) {
+        width: 290px;
+      }
+    }
   }
 
   &:focus,

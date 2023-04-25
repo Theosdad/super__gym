@@ -30,7 +30,7 @@
     @media (max-width: $mobile-width) {
       font-size: 32px;
       line-height: 38px;
-      margin-bottom: 36px;
+      margin-bottom: 34px;
     }
   }
 }
@@ -138,13 +138,17 @@
   }
 
   a {
-    display: inline;
+    display: inline-grid;
     color: $sapphire;
+
+    @media(max-width: $mobile-width) {
+      display: grid;
+      max-width: 140px;
+    }
 
     &:focus,
     &:hover {
       color: $venetian-red;
-      border-bottom: 1px solid $venetian-red;
     }
   }
 }

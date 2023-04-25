@@ -80,47 +80,49 @@
                 Также
                 в&nbsp;фитнес центре есть несколько оборудованных залов для различных видов групповых занятий.</p>
             </div>
-            <div class="hero__image">
-              <picture>
-                <source type="image/webp" media="(max-width: 767px)"
-                  srcset="./img/hero/hero-image-mobile.webp 1x, ./img/hero/hero-image-mobile@2x.webp 2x">
-                <source type="image/webp" media="(max-width: 1199px)"
-                  srcset="./img/hero/hero-image-tablet.webp 1x, ./img/hero/hero-image-tablet@2x.webp 2x">
-                <source type="image/webp" srcset="./img/hero/hero-image.webp 1x, ./img/hero/hero-image@2x.webp 2x">
-                <source media="(max-width: 767px)"
-                  srcset="./img/hero/hero-image-mobile.jpg 1x, ./img/hero/hero-image-mobile@2x.jpg 2x">
-                <source media="(max-width: 1199px)"
-                  srcset="./img/hero/hero-image-tablet.jpg 1x, ./img/hero/hero-image-tablet@2x.jpg 2x">
-                <img src="./img/hero/hero-image.jpg" srcset="./img/hero/hero-image@2x.jpg 2x" width="660" height="401"
-                  alt="Вид тренажёрного зала с разнообразными тренажёрами.">
-              </picture>
-            </div>
-            <div class="hero__video video">
-              <a class="video__link" href="https://www.youtube.com/watch?v=9TZXsZItgdw" target="_blank">
-                <div class="video__preview">
-                  <picture>
-                    <source type="image/webp" media="(max-width: 767px)"
-                      srcset="./img/video/video-preview-mobile.webp 1x, ./img/video/video-preview-mobile@2x.webp 2x">
-                    <source type="image/webp" media="(max-width: 1199px)"
-                      srcset="./img/video/video-preview-tablet.webp 1x, ./img/video/video-preview-tablet@2x.webp 2x">
-                    <source type="image/webp"
-                      srcset="./img/video/video-preview.webp 1x, ./img/video/video-preview@2x.webp 2x">
-                    <source media="(max-width: 767px)"
-                      srcset="./img/video/video-preview-mobile.jpg 1x, ./img/video/video-preview-mobile@2x.jpg 2x">
-                    <source media="(max-width: 1199px)"
-                      srcset="./img/video/video-preview-tablet.jpg 1x, ./img/video/video-preview-tablet@2x.jpg 2x">
-                    <img src="./img/video/video-preview.jpg" srcset="./img/video/video-preview@2x.jpg 2x" width="364"
-                      height="288" alt="Превью видео о нашем зале.">
-                  </picture>
+            <div class="hero__wrapper">
+              <div class="hero__image">
+                <picture>
+                  <source type="image/webp" media="(max-width: 767px)"
+                    srcset="./img/hero/hero-image-mobile.webp 1x, ./img/hero/hero-image-mobile@2x.webp 2x">
+                  <source type="image/webp" media="(max-width: 1199px)"
+                    srcset="./img/hero/hero-image-tablet.webp 1x, ./img/hero/hero-image-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="./img/hero/hero-image.webp 1x, ./img/hero/hero-image@2x.webp 2x">
+                  <source media="(max-width: 767px)"
+                    srcset="./img/hero/hero-image-mobile.jpg 1x, ./img/hero/hero-image-mobile@2x.jpg 2x">
+                  <source media="(max-width: 1199px)"
+                    srcset="./img/hero/hero-image-tablet.jpg 1x, ./img/hero/hero-image-tablet@2x.jpg 2x">
+                  <img src="./img/hero/hero-image.jpg" srcset="./img/hero/hero-image@2x.jpg 2x" width="660" height="401"
+                    alt="Вид тренажёрного зала с разнообразными тренажёрами.">
+                </picture>
+              </div>
+              <div class="hero__video video">
+                <a class="video__link" href="https://www.youtube.com/watch?v=9TZXsZItgdw" target="_blank">
+                  <div class="video__preview">
+                    <picture>
+                      <source type="image/webp" media="(max-width: 767px)"
+                        srcset="./img/video/video-preview-mobile.webp 1x, ./img/video/video-preview-mobile@2x.webp 2x">
+                      <source type="image/webp" media="(max-width: 1199px)"
+                        srcset="./img/video/video-preview-tablet.webp 1x, ./img/video/video-preview-tablet@2x.webp 2x">
+                      <source type="image/webp"
+                        srcset="./img/video/video-preview.webp 1x, ./img/video/video-preview@2x.webp 2x">
+                      <source media="(max-width: 767px)"
+                        srcset="./img/video/video-preview-mobile.jpg 1x, ./img/video/video-preview-mobile@2x.jpg 2x">
+                      <source media="(max-width: 1199px)"
+                        srcset="./img/video/video-preview-tablet.jpg 1x, ./img/video/video-preview-tablet@2x.jpg 2x">
+                      <img src="./img/video/video-preview.jpg" srcset="./img/video/video-preview@2x.jpg 2x" width="364"
+                        height="288" alt="Превью видео о нашем зале.">
+                    </picture>
+                  </div>
+                </a>
+                <button class="video__button" aria-label="Запустить видео">
+                  <svg class="video__icon" width="17" height="17">
+                    <use href="./img/sprite.svg#icon-play" />
+                  </svg>
+                </button>
+                <div class="video__container" data-video-container
+                  data-src="https://www.youtube.com/embed/9TZXsZItgdw?autoplay=1">
                 </div>
-              </a>
-              <button class="video__button" aria-label="Запустить видео">
-                <svg class="video__icon" width="17" height="17">
-                  <use href="./img/sprite.svg#icon-play" />
-                </svg>
-              </button>
-              <div class="video__container" data-video-container
-                data-src="https://www.youtube.com/embed/9TZXsZItgdw?autoplay=1">
               </div>
             </div>
           </div>
@@ -131,9 +133,9 @@
           <h2>Абонементы</h2>
           <div class="catalog__tabs tab">
             <div class="tab__button-set">
-              <button class="tab__button tab__button--active" data-tab-button id="1_month">1 месяц</button>
-              <button class="tab__button" data-tab-button id="6_months">6 месяцев</button>
-              <button class="tab__button" data-tab-button id="12_months">12 месяцев</button>
+              <button class="tab__button tab__button--active" data-tab-button id="1_month">1&nbsp;месяц</button>
+              <button class="tab__button" data-tab-button id="6_months">6&nbsp;месяцев</button>
+              <button class="tab__button" data-tab-button id="12_months">12&nbsp;месяцев</button>
             </div>
             <ul class="tab__list" data-tab-content aria-label="1_month">
               <li class="tab__item" tabindex="0">
@@ -267,7 +269,7 @@
                 <dd>12:00</dd>
               </dl>
               <p>Ежегодные соревнования по&nbsp;CrossFit</p>
-              <a class="promo__button" href="#!">Заполнить заявку</a>
+              <a class="promo__button" href="#!"><span>Заполнить заявку</span></a>
             </div>
             <div class="promo__image">
               <picture>
@@ -680,7 +682,8 @@
                   <label for="userphone" data-validate-type="phone" data-required
                     data-message-base="Поле обязательно к заполнению"
                     data-message-extra="Номер введен некорректно - 11 цифр">
-                    <input type="tel" name="userphone" id="userphone" placeholder="Телефон" required>
+                    <input type="tel" name="userphone" id="userphone" placeholder="Телефон" required
+                      pattern="[0-9]{11}">
                   </label>
                 </div>
                 <button class="form__input form__input--button" type="submit">Отправить</button>
